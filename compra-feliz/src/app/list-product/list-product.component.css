@@ -1,0 +1,12 @@
+mat-grid-tile {
+  background: rgb(95, 6, 6);
+}
+
+#btn-finish
+{
+ float:right;
+ width: 300px;
+ height: 40px;
+ margin-bottom: 10px;
+ margin-top: 10px;
+}

@@ -1,0 +1,25 @@
+#img-product
+{
+  max-width: 150px;
+  max-width: 150px;
+  margin: auto;
+  display: table;
+}
+
+#btn-purchase
+{
+  width: 100%;
+}
+
+.price
+{
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+.product-card
+{
+  width: 100% !important;
+  height: 100% !important;
+}
+
