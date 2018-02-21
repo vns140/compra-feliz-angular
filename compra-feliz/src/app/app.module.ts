@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { MatAutocompleteModule,
   MatButtonModule,
@@ -35,9 +36,10 @@ import { MatAutocompleteModule,
 import { AppComponent } from './app.component';
 import { ListProductComponent } from './list-product/list-product.component';
 import { ProductComponent } from './product/product.component';
-import { ListCartComponent } from './list-cart/list-cart.component';
 import { PaymentComponent } from './payment/payment.component';
 import { ProductService } from './product/product.service';
+import { CartComponent } from './cart/cart.component';
+import { CartService } from './cart/services/cart.service';
 
 
 @NgModule({
@@ -45,8 +47,8 @@ import { ProductService } from './product/product.service';
     AppComponent,
     ListProductComponent,
     ProductComponent,
-    ListCartComponent,
-    PaymentComponent
+    PaymentComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
@@ -80,7 +82,8 @@ import { ProductService } from './product/product.service';
     MatTabsModule,
     MatToolbarModule,
     MatTooltipModule,
-    MatStepperModule
+    MatStepperModule,
+    BrowserAnimationsModule
   ],
   exports:
   [
@@ -117,7 +120,8 @@ import { ProductService } from './product/product.service';
     MatStepperModule
   ],
   providers: [
-    ProductService
+    ProductService,
+    CartService
   ],
   bootstrap: [AppComponent]
 })

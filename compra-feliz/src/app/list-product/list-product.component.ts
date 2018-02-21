@@ -17,5 +17,4 @@ export class ListProductComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }
