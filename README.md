@@ -1,2 +1,2 @@
 # compra-feliz-angular
-Sistema basico para conhecimento angular
+Sistema basico angular
