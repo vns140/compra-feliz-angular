@@ -15,6 +15,9 @@ export class CartService {
     this.productCart = new ProductCart();
     this.productCart.product = product;
     this.productCart.qtde = 1;
+
+    this.cart = new Cart();
+    this.cart.products = [];
     this.cart.products.push(this.productCart);
     this.cart.qtde = this.cart.qtde + 1;
     this.cart.total = this.cart.total + product.price;
